@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Dribbble- Discover the world's Top Designers and Creative..</title>
+    <link rel="shortcut icon" href="./dribbble logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="nav1">
+            <img src="data:image/png;base64,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">
+            <h4>Inspiration</h4>
+            <h4>Find Work</h4>
+            <h4>Go Pro</h4>
+            <h4>Learn Design</h4>
+            <h4>Hire Designer</h4>
+        </div>
+
+        <div id="nav2">
+            <i class="ri-search-line"></i>
+            <button id="btn1">Sign in</button>
+            <button id="btn2">Sign up</button>
+        </div>
+
+    </div>
+
+    <div id="center">
+         <video autoplay loop muted  src="https://cdn.dribbble.com/uploads/39417/original/49dbf46eae15d227fc95a69cee31251e.mp4?1657824906"></video>
+
+         <div id="layout"> 
+            <div id="info">
+                 <h5>Discover</h5>
+                 <h5>Animation</h5>
+                 <h5>Branding</h5>
+                 <h5>Illustraion</h5>
+                 <h5>Mobile</h5>
+                 <h5>Print</h5>
+                 <h5>Product Design</h5>
+                 <h5>Typography</h5>
+                 <h5>Web Design</h5>
+           </div>
+           
+         <h3>Explore the world’s leading <br> design portfolios</h3>
+         <p>Millions of designers and agencies around the world showcase their portfolio work<br> on Dribbble - the home to the world’s best design and creative professionals.</p>
+
+         <input type="text" placeholder="Search...">
+        
+         <div id="other">
+            <h6>Trending searches</h6>
+            <h6>landing page</h6>
+            <h6>ios</h6>
+            <h6>food</h6>
+            <h6>landingpage</h6>
+            <h6>uxdesign</h6>
+            <h6>app design</h6>
+         </div>
+         
+
+    </div>
+
+    <div id="gallery">
+        <div class="elem">
+            <img src="https://cdn.dribbble.com/userupload/6692110/file/original-69c2faaed142c489e738e529f554596a.jpg?compress=1&resize=400x300&vertical=top" alt="">
+            <div id="cover">
+               <h6>CBDC-Website f..</h6>
+               <div id="icon">
+                 <i class="ri-heart-3-fill"></i>
+                 <i class="ri-folder-add-fill"></i>
+                </div>
+            </div>
+            <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/1573719/avatars/mini/1b299537341c829ddc968d627aeedf40.png?1610610205" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="elem">
+            <img src="https://cdn.dribbble.com/userupload/7135108/file/original-0934b9142dacd25c07507013776bda47.png?compress=1&resize=400x300&vertical=top" alt="">
+            <div id="cover">
+                <h6>Random Logo</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/174531/avatars/mini/15aa8b82e7c45563c3300038f5e18c5b.jpg?1575308145" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>  
+        </div>
+
+        <div class="elem">
+            <img src="https://media3.giphy.com/media/XEaf8MUAyeit1fSI01/200w.webp?cid=ecf05e47vj0fqpwn5jm5nlzf2ex0v2iini23fiwdjjk9kpvk&ep=v1_gifs_related&rid=200w.webp&ct=g" alt="">
+            <div id="cover">
+                <h6>Wild West</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/7834604/avatars/mini/387711e9f4f865e52a9be6c116a61478.jpg?1678660343" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="elem">
+            <img src="https://cdn.dribbble.com/userupload/7127409/file/original-055b275caa9a5eed262297e519549fd6.png?compress=1&resize=400x300&vertical=top" alt="">
+            <div id="cover">
+                <h6>Wander Branding</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/10708072/avatars/mini/5aa0e4952a81604d6ed846c1709e0e00.jpg?1664088006" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="elem">
+            <img src="https://cdn.pixabay.com/animation/2022/08/22/11/10/11-10-53-252_512.gif" alt="">
+            <div id="cover">
+                <h6>Wander</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/730703/avatars/mini/eee24de7146f290f73f64ef9373cf0a5.jpg?1536163934" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="elem">
+            <img src="https://cdn.dribbble.com/userupload/7068688/file/original-1b83affcebe42c2ae367494d3cda0a0d.png?compress=1&resize=400x300&vertical=top" alt="">
+            <div id="cover">
+                <h6>Keelo 2</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/6344016/avatars/mini/008e97fc225763630b57e4635f69a2ca.png?1608135123" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+        <div class="elem">
+            <img src="https://cdn.dribbble.com/userupload/6682362/file/original-96f71634e6b5b9784e12c642e7c63949.png?compress=1&resize=400x300&vertical=top" alt="">
+            <div id="cover">
+                <h6>Holy Dog Logo</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/8142070/avatars/mini/a501fb544c88a6a37657efc57491eb84.png?1628440660" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+        <div class="elem">
+            <img src="https://media1.giphy.com/media/Mc0sA7tY903RUy9KFP/giphy.gif?cid=ecf05e47ifsamjq80tzfezp88aupkjkkrcixt39jkkfjbts4&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="">
+            <div id="cover">
+                <h6>Rare Explore</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/8600870/avatars/mini/e5d5a5b065abfebf7dd514245713a824.jpg?1637145971" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="elem">
+            <img src="https://cdn.dribbble.com/userupload/6720407/file/original-e7d6fc2b6337718d58c0fe5680f90581.jpg?compress=1&resize=400x300&vertical=top" alt="">
+            <div id="cover">
+                <h6>Keelo 2</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/11502486/avatars/mini/a8456497e26e27118763af6fc5b5fbcc.png?1650726363" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+        <div class="elem">
+            <img src="https://cdn.dribbble.com/userupload/7126125/file/original-21ee3a12c2fcbc0f4bf3c3b6a53752a7.jpg?compress=1&resize=400x300&vertical=top" alt="">
+            <div id="cover">
+                <h6>Holy Dog Logo</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/6567474/avatars/mini/b849c692c6c9fc9cfdca178b90e354d2.png?1607746416" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+        <div class="elem">
+            <img src="https://cdn.dribbble.com/userupload/6694831/file/original-2d7b8560be6fc2bb0dfab9da2699b3aa.jpg?compress=1&resize=450x338&vertical=top" alt="">
+            <div id="cover">
+                <h6>Rare Explore</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/7682113/avatars/mini/50c47d45c2998a878e0fc3029e5bcfa7.jpg?1675554453" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+        <div class="elem">
+            <img src="https://cdn.dribbble.com/userupload/6696826/file/original-9772f97733508a620bae7c144052af8a.png?compress=1&resize=450x338&vertical=top" alt="">
+            <div id="cover">
+                <h6>Keelo 2</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/7537472/avatars/mini/e19df6063a95413d4701029c92a7004d.jpg?1684428680" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+        <div class="elem">
+            <img src="https://cdn.pixabay.com/animation/2022/08/31/08/22/08-22-22-928_512.gif" alt="">
+            <div id="cover">
+                <h6>Holy Dog Logo</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/8141654/avatars/mini/56779f36e5b8908907245db130654dd0.jpg?1678659713" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+        <div class="elem">
+            <img src="https://cdn.dribbble.com/userupload/7130830/file/original-ae91a9428507399614668fd891215bf9.png?compress=1&resize=400x300&vertical=top" alt="">
+            <div id="cover">
+                <h6>Rare Explore</h6>
+                <div id="icon">
+                  <i class="ri-heart-3-fill"></i>
+                  <i class="ri-folder-add-fill"></i>
+                 </div>
+             </div>
+             <div id="about">
+                <div id="div1">
+                   <img src="https://cdn.dribbble.com/users/8142070/avatars/mini/a501fb544c88a6a37657efc57491eb84.png?1628440660" alt="">
+                 <h1>Lorem ipsum dolor</h1>
+                 <button>PRO</button>
+              </div>
+              <div id="div2">
+                <i class="ri-heart-3-fill"></i>
+                <i class="ri-eye-fill"></i>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id="account">
+        <button>Sign up to continue</button>
+        <button>or sign in</button>
+    </div>
+
+<footer>
+    <div id="part1">
+        <div id="one" >
+            <img src="./dribble final logo.jpg" alt="">
+            <h1>Dribbble is the world’s leading<br> community for creatives to share, grow,<br> and get hired.</h1>
+            <div id="icon">
+                <i class="ri-dribbble-line"></i>
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-facebook-box-fill"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-pinterest-fill"></i>
+            </div>
+        </div>
+        <div id="two" class="foot">
+            <h1>For Designers</h1>
+            <ul>
+                <li>Go Pro!</li>
+                <li>Explore design work</li>
+                <li>Design blog</li>
+                <li>Overtime podcast</li>
+                <li>Playoffs</li>
+                <li>Code of conduct</li>
+            </ul>
+
+        </div>
+        <div id="three" class="foot">
+            <h1>Hire Designers</h1>
+            <ul>
+                <li>Post a job opening</li>
+                <li>Post a freelance project</li>
+                <li>Search for designers</li>
+            </ul>
+            <h1>Brands</h1>
+            <ul>
+                <li>Advertise with us</li>
+            </ul>
+
+        </div>
+        <div id="four" class="foot">
+            <h1>Company</h1>
+            <ul>
+                <li>About</li>
+                <li>Careers</li>
+                <li>Support</li>
+                <li>Media Kit</li>
+                <li>Testimonals</li>
+                <li>API</li>
+                <li>Terms of service</li>
+                <li>Privacy policy</li>
+                <li>Cookie policy</li>
+            </ul>
+
+        </div>
+        <div id="five" class="foot">
+            <h1>Directories</h1>
+            <ul>
+                <li>Design jobs</li>
+                <li>Designer for hire</li>
+                <li>Freelance designers for hire</li>
+                <li>Tags</li>
+                <li>Places</li>
+            </ul>
+            <h1>Design assets</h1>
+            <ul>
+                <li>Dribble Marketplace</li>
+                <li>Creative Market</li>
+                
+                <li>Fontspring</li>
+                <li>Font Squirrel</li>
+            </ul>
+
+        </div>
+        <div id="six" class="foot">
+            <h1>Design Resources</h1>
+            <ul>
+                <li>Freelancing</li>
+                <li>Design Hiring</li>
+                <li>Design portfolio</li>
+                <li>Design Education</li>
+                <li>Creative Process</li>
+                <li>Design industry Trends</li>
+            </ul>
+        </div>
+    </div>
+    <div id="part2">
+    </div>
+    <div id="part3">
+        <div id="left">
+            <h1>&copy;2023 Dribbble.All rights reserved.</h1>
+        </div>
+        <div id="right">
+            <h1>###### shots dribbble </h1>
+            <img src="./dribbble logo.png" alt="">
+        </div>
+    </div>
+    </footer>
+
+</body>
+</html>
